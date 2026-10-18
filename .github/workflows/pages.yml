@@ -1,0 +1,44 @@
+name: Publicēt MI prasmju katalogu
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Nolasīt repozitoriju
+        uses: actions/checkout@v4
+      - name: Pārbaudīt nepieciešamos failus
+        run: |
+          test -f skills/prezentacijas-veidosana/SKILL.md
+          test -f site/index.html
+      - name: Sagatavot publicējamo katalogu
+        run: |
+          mkdir -p _pages/skills/prezentacijas-veidosana
+          cp site/index.html _pages/index.html
+          cp skills/prezentacijas-veidosana/SKILL.md _pages/skills/prezentacijas-veidosana/SKILL.md
+          touch _pages/.nojekyll
+      - name: Konfigurēt GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Augšupielādēt Pages saturu
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+      - name: Publicēt GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
