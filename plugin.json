@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tvg",
+  "version": "0.1.0",
+  "description": "Mācību darba lapas, diferenciācija un prezentācijas latviešu valodā.",
+  "author": { "name": "MI skolotājiem" },
+  "repository": "https://github.com/MI-skolotajiem/tvg-plugins",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "TVĢ skolotājiem",
+        "shortDescription": "Darba lapas, diferenciācija un prezentācijas",
+        "developerName": "MI skolotājiem",
+        "category": "Productivity",
+        "brandColor": "#523A6F"
+      }
+    }
+  }
+}

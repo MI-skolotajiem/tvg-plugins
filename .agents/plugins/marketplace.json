@@ -1,0 +1,11 @@
+{
+  "name": "tvg-skolotajiem",
+  "interface": { "displayName": "TVĢ skolotājiem" },
+  "plugins": [
+    {
+      "name": "tvg",
+      "source": { "source": "local", "path": "./" },
+      "category": "Productivity"
+    }
+  ]
+}
