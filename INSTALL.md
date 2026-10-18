@@ -6,7 +6,7 @@ Komplektā: darba lapas, diferenciācija un prezentāciju veidošana. Lietotāja
 
 1. Uzstādiet Codex un pieslēdzieties savam kontam.
 2. Lejupielādējiet šo repozitoriju kā ZIP un izpakojiet.
-3. Atveriet Windows PowerShell izpakotajā mapē un palaidiet:
+3. Atveriet `scripts/install-tvg.cmd` ar dubultklikšķi. Varat arī atvērt Windows PowerShell izpakotajā mapē un palaist:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-tvg.ps1
@@ -18,7 +18,7 @@ Uzstādītājs arī izveido Windows uzdevumu `TVG-Codex-Update`: pārbaude katru
 
 Lai uzstādītu bez fona pārbaudēm, pievienojiet `-NoAutoUpdate`.
 
-Uzdevuma skripts un pēdējās pārbaudes rezultāts glabājas `%LOCALAPPDATA%\TVG-Codex`. Jauns prasmju saturs var prasīt jaunu sarunu vai Codex pārstartēšanu; jau atvērtās sarunas netiek piespiedu kārtā mainītas.
+Uzdevuma skripts un pēdējās pārbaudes rezultāts glabājas Codex datu mapē `tvg-update` (parasti `%USERPROFILE%\.codex\tvg-update`). Jauns prasmju saturs var prasīt jaunu sarunu vai Codex pārstartēšanu; jau atvērtās sarunas netiek piespiedu kārtā mainītas.
 
 ## Pārbaudes versija pirms apvienošanas ar main
 

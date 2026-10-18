@@ -12,7 +12,7 @@ $env:CODEX_HOME = $CodexHome
 $marketplace = 'tvg-skolotajiem'
 $plugin = 'tvg@tvg-skolotajiem'
 $taskName = 'TVG-Codex-Update'
-$dataDir = Join-Path $env:LOCALAPPDATA 'TVG-Codex'
+$dataDir = Join-Path $CodexHome 'tvg-update'
 $codexCommand = Get-Command codex -ErrorAction SilentlyContinue
 if ($codexCommand) {
     $codexExe = $codexCommand.Source
