@@ -31,7 +31,8 @@ jobs:
       - name: Sagatavot publicējamo katalogu
         run: |
           mkdir -p _pages
-          cp site/index.html _pages/index.html
+          cp -R site/. _pages/
+          test -s _pages/assets/tvg-logo.png
           cp -R skills _pages/skills
           touch _pages/.nojekyll
       - name: Konfigurēt GitHub Pages
