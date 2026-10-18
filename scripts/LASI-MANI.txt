@@ -1,0 +1,31 @@
+TVG spraudnis Windows datoram un Codex lietotnei
+
+1. Uzstadiet Codex un piesledzieties ar savu kontu.
+2. Izpakojiet visu lejupieladeto ZIP mapi.
+3. Ar dubultklikski palaidiet install-tvg.cmd.
+4. Sagaidiet pazinojumu, ka automatiska parbaude ieslegta.
+5. Atveriet jaunu Codex sarunu. Ja prasmes nav redzamas, parstartejiet Codex.
+
+Instrukcija ar paskaidrojumiem:
+https://mi-skolotajiem.github.io/tvg-plugins/uzstadisana.html
+
+Komplekts instale visas TVG prasmes no publiska MI-skolotajiem/tvg-plugins
+repozitorija main zara. GitHub konts nav vajadzigs.
+
+Atjauninajumu parbaude: reizi diena plkst. 12.00 pec datora laika vai
+velak, kad dators ir ieslegts, lietotajs pierakstijies un pieejams internets.
+Tas ir Windows uzdevums TVG-Codex-Update ar pasreizeja lietotaja tiesibam.
+
+Ja skolas Windows politika nelauj izveidot uzdevumu, skripts rada kludu.
+Tada gadijuma spraudnis var but uzstadits, bet fona atjauninasana nav ieslegta.
+Vajadziga skolas IT palidziba vai manuala atjauninasana.
+
+Manuala atjauninasana PowerShell:
+codex plugin marketplace upgrade tvg-skolotajiem
+codex plugin add tvg@tvg-skolotajiem
+
+Parbaudes rezultats:
+%USERPROFILE%\.codex\tvg-update\last-update.txt
+
+Spraudnis paredzets Codex lietotnei. Tas neinstale prasmes ChatGPT
+parluka sarunas vai cita lokalaja MI programma.

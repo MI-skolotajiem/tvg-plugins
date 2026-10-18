@@ -5,6 +5,9 @@ on:
     paths:
       - 'skills/**'
       - 'site/**'
+      - 'scripts/**'
+      - 'plugin.json'
+      - '.agents/plugins/marketplace.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +31,11 @@ jobs:
           test -f skills/prezentacijas-veidosana/SKILL.md
           test -f skills/darbalapa/SKILL.md
           test -f site/index.html
+          test -f site/uzstadisana.html
+          test -f plugin.json
+          test -f .agents/plugins/marketplace.json
+          test -f scripts/install-tvg.ps1
+          test -f scripts/install-tvg.cmd
       - name: Sagatavot publicējamo katalogu
         run: |
           mkdir -p _pages
@@ -35,6 +43,17 @@ jobs:
           test -s _pages/assets/tvg-logo.png
           cp -R skills _pages/skills
           touch _pages/.nojekyll
+      - name: Sagatavot Windows uzstādītāju
+        run: |
+          mkdir -p _pages/downloads
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+          files = ['install-tvg.cmd', 'install-tvg.ps1', 'LASI-MANI.txt']
+          with ZipFile('_pages/downloads/TVG-spraudnis-Windows.zip', 'w', ZIP_DEFLATED) as archive:
+              for name in files:
+                  archive.write(Path('scripts') / name, name)
+          PY
       - name: Konfigurēt GitHub Pages
         uses: actions/configure-pages@v5
       - name: Augšupielādēt Pages saturu
