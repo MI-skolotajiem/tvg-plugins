@@ -2,6 +2,7 @@
   const skills = [
     { name: 'darbalapa', path: './skills/darbalapa/SKILL.md' },
     { name: 'diferenciacija', path: './skills/diferenciacija/SKILL.md' },
+    { name: 'latviesu-valodas-asistents', path: './skills/latviesu-valodas-asistents/SKILL.md' },
     { name: 'prezentacijas-veidosana', path: './skills/prezentacijas-veidosana/SKILL.md' }
   ];
   const button = document.querySelector('#copy-starter');
@@ -36,7 +37,7 @@
       ].join('\n\n');
       button.disabled = false;
       button.textContent = 'Kopēt visas instrukcijas ChatGPT';
-      status.textContent = 'Visas 3 prasmes gatavas kopēšanai';
+      status.textContent = 'Visas 4 prasmes gatavas kopēšanai';
     } catch {
       text.value = '';
       button.disabled = false;
