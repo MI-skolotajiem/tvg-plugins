@@ -1,7 +1,7 @@
 ---
 name: prezentacijas-veidosana
 description: Izstrādā skaidras, mērķauditorijai pielāgotas prezentācijas ar loģisku slaidu struktūru un runātāja piezīmēm.
-version: 0.1.1
+version: 0.1.2
 language: lv
 ---
 
@@ -32,8 +32,12 @@ Sagatavot prezentāciju, kas palīdz auditorijai uztvert būtiskāko un ļauj ru
 - Nesūti prezentāciju un nemaini ārējās sistēmas bez lietotāja atļaujas.
 
 ## TVĢ vizuālā identitāte un PowerPoint rediģējamība
-1. TVĢ prezentācijām lieto violetu kā pamatkrāsu un zaļu kā akcentu. Violetā references tonis **#533071** ir TVĢ MI prasmju vietnes izmantotais tonis; tas nav apliecināts kā skolas oficiāls HEX standarts. Zaļā references tonis **#007565** ir Talsu novada vizuālās identitātes dokumentā definētais tonis, nevis apstiprināts TVĢ skolas zīmola tonis. Pirms oficiālas skolas prezentācijas vajadzības gadījumā salīdzini ar https://www.tvg.edu.lv/ aktuālo dizainu; neaizstāj nezināmu oficiālu toni ar nepārbaudītu apgalvojumu.
+1. **TVĢ krāsu palete:** prezentācijās par Talsu Valsts ģimnāziju izmanto violetu **#4A3069** kā pamatkrāsu un koši zaļu **#4EBA1D** kā akcentu, kā precizēts pēc lietotāja sniegtā TVĢ mājaslapas attēla. Pieļaujami šo krāsu gaišāki un tumšāki atvasinājumi, kā arī balts un neitrāli toņi tekstam/kontrastam. Iepriekšējie darba toņi #533071 un #007565 šīs prezentāciju prasmes TVĢ paletei vairs nav izmantojami. Šie ir pēc vizuālās references izvēlēti darba toņi; neapgalvo, ka tie ir oficiāli apstiprināti zīmola HEX kodi.
 2. Prezentācijas pamattekstu parasti veido **24–32 pt**, virsrakstus **36–48 pt** (atkarībā no teksta apjoma, ekrāna un izkārtojuma). Izvairies no pārāk maza teksta un dekoratīvi tukša slaida. Galvenajam saturam atvēli ievērojamu daļu slaida, parasti vairāk nekā 20–30 % no lietderīgā laukuma, tomēr neblīvē slaidu un saglabā lasāmību.
 3. Izmanto fontus ar drošu latviešu diakritisko zīmju atbalstu: **Aptos**, **Arial** vai **Calibri**. Pārbaudi ā, ē, ī, ū, č, ģ, ķ, ļ, ņ, š, ž gan PowerPoint failā, gan eksportā.
 4. PowerPoint failā teksta fragmentus, kas veido vienu loģisku bloku (piemēram, virsrakstu un ar to saistītās rindas vai punktu sarakstu), pēc iespējas ievieto **vienā rediģējamā tekstlodziņā**, izmantojot rindkopu un teksta posmu formatējumu. Nesašķel katru rindu vai vārdu atsevišķos teksta objektos. Atsevišķus lodziņus izmanto tikai tur, kur tos pamato izkārtojums, animācija vai cita funkcija.
 5. Pirms .pptx nodošanas pārbaudi teksta objektu skaitu, rediģēšanas ērtumu, burtu lielumu, satura laukuma aizpildījumu, krāsu kontrastu un diakritisko zīmju attēlojumu.
+
+6. **Autentiska TVĢ logo izmantošana:** pirms slaidu izveides pārbaudi lietotājam pieejamo failu bibliotēku, sarunai pievienotos failus un citus atļautos avotus, meklējot īstu TVĢ logotipu. Ja tāds ir pieejams, izmanto tieši oriģinālo attēlfailu, saglabājot proporcijas un krāsas. Ja ir vairāki autentiski varianti, izvēlies piemērotāko slaida fonam un dokumentē avotu. **Neģenerē, nepārzīmē un neimitē logotipu**, arī ne ar attēlu ģenerēšanas rīkiem. Ja logo nav iegūstams, izmanto skolas nosaukumu kā parastu tekstu un skaidri norādi ierobežojumu.
+7. **TVĢ fotogrāfiju izcelsme:** attēlus izvēlies no https://www.tvg.edu.lv/ galerijām un publikācijām vai citiem uzticamiem avotiem, kuros attēls ir nepārprotami identificēts kā Talsu Valsts ģimnāzijas ēka, vide, pasākums, tradīcija vai skolai tieši piesaistīta norise. Pirms ievietošanas pārbaudi katra attēla izcelsmi un saikni ar TVĢ; saglabā avota saiti un, ja vajadzīgs, autora/kredīta informāciju. Ievēro attēlu lietošanas tiesības. Neizmanto nejaušus skolu foto, stock attēlus, citas skolas ēkas vai MI ģenerētus attēlus kā dokumentālus TVĢ foto. Ja precīzi identificētu un tiesiski izmantojamu foto nevar iegūt, izvēlies grafisku izkārtojumu bez šāda attēla.
+8. **Gala kvalitātes kontrole:** pārbaudi krāsu atbilstību šai paletei, oriģinālā logo izmantošanu (ja pieejams), fotogrāfiju avotu pārbaudāmību, attēlu licences, PowerPoint rediģējamību, salasāmību un latviešu diakritiku. Neuzdod ilustrāciju vai mākslīgi ģenerētu skolas ēkas atveidu par īstu TVĢ fotogrāfiju.
